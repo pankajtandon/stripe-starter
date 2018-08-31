@@ -1,0 +1,3 @@
+stripe:
+  enabled: true
+  apiKey: <your-key-here> #Obtain key from https://dashboard.stripe.com/developers
