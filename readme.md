@@ -22,7 +22,7 @@ The `StripeService` can be used in your _plain java application_ by being added 
     <dependency>
         <groupId>com.technochord.stripe</groupId>
         <artifactId>stripe-service</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.2</version>
     </dependency>
 ```
 
