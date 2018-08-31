@@ -9,12 +9,12 @@ The `Spring Boot Starter` can be used in your _Spring Boot application_ by being
 
 ```
     <dependency>
-	<groupId>com.technochord.stripe</groupId>
-	<artifactId>stripe-starter</artifactId>
+	<groupId>com.technochord.spring.starter.stripe</groupId>
+	<artifactId>stripe-spring-boot-starter</artifactId>
 	<version>1.0.0</version>
     </dependency>
 ```
-This transitively pulls in the `StripeService` described below.
+This transitively pulls in the `StripeService` described below. The `Demo` project can be viewed to see usage of the starter project.
 
 The `StripeService` can be used in your _plain java application_ by being added as a dependency your application's `pom.xml`. Note that there is no dependency on the `SpringFramework` with this approach:
 
