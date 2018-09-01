@@ -5,6 +5,7 @@ This project offers a `Spring Boot Starter` and a `Java service` that allows use
 
 ### To use in your project
 
+#### In a Spring Boot app:
 The `Spring Boot Starter` can be used in your _Spring Boot application_ by being added as a dependency your application's `pom.xml`.
 
 ```
@@ -15,6 +16,27 @@ The `Spring Boot Starter` can be used in your _Spring Boot application_ by being
     </dependency>
 ```
 This transitively pulls in the `StripeService` described below. The `Demo` project can be viewed to see usage of the starter project.
+Then in your `application.yml`:
+
+```
+stripe:
+  enabled: true
+  apiKey: <your-key-here-from-https://dashboard.stripe.com/developers>
+```
+
+In any Spring managed service:
+```
+  import com.technochord.stripe.service.StripeService;
+
+  @Autowired
+  private StripeService stripeService;
+
+  //The injected stripeService is ready to go
+  stripeService.createCustomer("anEmail@gmail.com", "A new Pilot Customer", "GENERAL");
+
+```
+
+#### In a plain Java application (with no Spring based dependency injection):
 
 The `StripeService` can be used in your _plain java application_ by being added as a dependency your application's `pom.xml`. Note that there is no dependency on the `SpringFramework` with this approach:
 
@@ -25,14 +47,13 @@ The `StripeService` can be used in your _plain java application_ by being added 
         <version>1.0.2</version>
     </dependency>
 ```
-
 In any class that belongs to your project:
 
 ```
   import com.technochord.stripe.service.StripeService;
   ...
 
-  //Obtain an apiKey from https://dashboard.stripe.com/developers
+  //New up a service and obtain an apiKey from https://dashboard.stripe.com/developers
   StripeService stripeService = new StripeService(stripeApiKey);
   ...
 
