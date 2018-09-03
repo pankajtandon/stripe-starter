@@ -65,10 +65,13 @@ In any class that belongs to your project:
 
 Most [Common Use Cases](#Common-Use-Cases) are covered by this service. 
 
+### Related Plog Post
+Please see [here](http://technochord.com/2018/09/stripe-integration) for the motivation for this project.
+
 ### Basics
 
 - A Stripe `Customer` represents a user who's using the payment gateway to make a payment.
-- A `Payment Source` is applied to a `Customer`. A `Customer` can have several `Payment Sources` 
+- A `Payment Source` is applied to a `Customer`. A `Customer` can have several `Payment Sources`
 but only one default at a time.
 _StripeService_ only supports a `Payment Source` of type `Credit Card` currently. A `Payment Source`
 is also called a `Token`.
