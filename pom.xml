@@ -19,25 +19,11 @@
 	</parent>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<lombok.version>1.18.0</lombok.version>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<maven.compiler.source>1.8</maven.compiler.source>
-
 		<stripe.version>5.51.0</stripe.version>
-		<lombok.version>1.18.0</lombok.version>
 		<maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
 		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
 		<jacoco-maven-plugin.version>0.8.0</jacoco-maven-plugin.version>
-		<junit.version>4.12</junit.version>
-		<assertj.version>3.9.1</assertj.version>
-		<mockito.version>2.15.0</mockito.version>
-		<hamcrest.version>1.3</hamcrest.version>
-		<slf4j.version>1.7.25</slf4j.version>
-		<logback.version>1.2.3</logback.version>
 		<common-lang.version>2.6</common-lang.version>
 	</properties>
 	<developers>

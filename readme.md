@@ -211,7 +211,7 @@ The use cases that can currently be addressed are below. See [Tests](stripe-serv
 ```
   mvn clean install
   
-  # Skip gpg signing 
+  //Skip gpg signing
   mvn clean install -Dgpg.skip=true
   
 ```     
